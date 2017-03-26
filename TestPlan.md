@@ -11,7 +11,7 @@ Testing Strategy</br>
 An app that tests and standardize the results of various accessibility testing APIs. Our target users are people with disabilities and web developers who aim to make accessible website inclusive of all users. Developers can take advantage of our reports to make the appropriate fixes.  
 
 ## **SCOPE**
-General This section describes what is being tested, such as all the functions of a specific product, its existing interfaces, integration of all functions. 
+This section describes what is being tested, such as all the functions of SUX, its interfaces and integration of all functions. 
 ### Typical Use Case:
 1. Our app should allow us to specify which checks we want to run. Say during a bug fixing, we want the ability to turn off certain checks.
 2. User enters a URL </br>
