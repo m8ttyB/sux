@@ -1,0 +1,8 @@
+venv
+__pycache__
+.cache/
+.DS_Store
+.tox
+*.pyc
+screenshot.png
+geckodriver.log
