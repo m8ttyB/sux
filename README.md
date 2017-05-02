@@ -40,7 +40,7 @@ The goal of these tests is ______. </br>
 Method:</br>
 1. Have a few websites (we write our own or copy code from others) that we can use as test inputs.</br>
 2. Write regression tests. </br>
-* Please read [TestPlan.md](./master/TestPlan.md)</br>
+* Please read [TestPlan.md](./TestPlan.md)</br>
 3. Have those tests be part of our [Jenkins pipeline](https://jenkins.io/doc/book/pipeline/getting-started)</br>
 
 
