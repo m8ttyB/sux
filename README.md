@@ -1,5 +1,5 @@
 # Automate Web Accessibility Testing
-The goal of SUX (Some User Experience) is to create an automated test for various accessibility APIs out there that measure how accessible a website is. 
+The goal of SUX (Some User Experience) is to create an automated test for various accessibility APIs out there that measure how accessible a website is.
 
 ### Contents
 
@@ -7,7 +7,7 @@ The goal of SUX (Some User Experience) is to create an automated test for variou
 - [Current Available Resources](#current-available-resources)
 - [Automate Accessibility Testing](#automate-accessibility-testing)
 - [Built With](#built-with)
-- 
+-
 
 ## What is Web Accessibility?
 
@@ -40,7 +40,7 @@ The goal of these tests is ______. </br>
 Method:</br>
 1. Have a few websites (we write our own or copy code from others) that we can use as test inputs.</br>
 2. Write regression tests. </br>
-* Please read [Testing_plan.md](<link on github>)</br>
+* Please read [TestPlan.md](./master/TestPlan.md)</br>
 3. Have those tests be part of our [Jenkins pipeline](https://jenkins.io/doc/book/pipeline/getting-started)</br>
 
 
@@ -65,6 +65,6 @@ We need a versioning system(?)
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
-* Please read [LICENSE](https://github.com/m8ttyB/sux/blob/master/LICENSE) for details on the licensing. 
+* Please read [LICENSE](https://github.com/m8ttyB/sux/blob/master/LICENSE) for details on the licensing.
 
 ## Acknowledgments
