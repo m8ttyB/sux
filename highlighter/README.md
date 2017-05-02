@@ -3,13 +3,15 @@
 
 # SUX Highlighter
 
-Thank you for checking out the highlighter experiement. The goal of this experiement is to make ARIA `role` attributes in the DOM visibile to browsers that are not screenreaders. Once these elements have been exposed, diff the webpage (a screenshot) against a baseline image for visual regressions.
+Thank you for checking out the highlighter experiement. The goal of this experiement is to make ARIA `role` attributes in the DOM visibile to browsers that are not screen readers. Once these elements have been exposed, diff the webpage (a screenshot) against a baseline image for visual regressions.
 
 
 
 ## Getting involved as a contributor
 
-This is currently a prototype meant to help us have a discussion around this problem space. Contribution is always welcome, but just know that active development on this tool won't be happening on a specific timeline. If you'd like to have a conversation reach out to either me (:mbrandt) in [irc.mozilla.org](https://wiki.mozilla.org/IRC) ([#fx-test](http://chat.mibbit.com/?server=irc.mozilla.org&channel=#fx-test)).
+This is currently a prototype meant to help us have a discussion around this problem space. Contribution is always welcome, but just know that active development on this tool won't be happening on a specific timeline. Or may not happen at all.
+
+If you'd like to have a conversation reach out to me (:mbrandt) in [irc.mozilla.org](https://wiki.mozilla.org/IRC) ([#fx-test](http://chat.mibbit.com/?server=irc.mozilla.org&channel=#fx-test)).
 
 ## Questions are always welcome
 
