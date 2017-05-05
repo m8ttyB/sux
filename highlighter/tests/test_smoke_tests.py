@@ -15,9 +15,7 @@ class TestSmokeTests:
         selenium.get(base_url)
         selenium.execute_script(open("./src/aria-highlighter.js").read())
         selenium.save_screenshot('screenshot.png')
-        # add a sleep so the test run is visible for presentation purposes
-        time.sleep(2)
-        assert pytest.idiff(baseline, 'screenshot.png', tolerance=0.002), self.black_or_b(baseline, 'screenshot.png')
+        assert pytest.idiff(baseline, 'screenshot.png', tolerance=0.002), self.create_image_diff_overlay(baseline, 'screenshot.png')
 
     @pytest.mark.nondestructive
     @pytest.mark.xfail(reason='Negative case: should fail, uses a tampered baseline image')
@@ -39,19 +37,12 @@ class TestSmokeTests:
         img_b = Image.open(img_b)
         diff = ImageChops.difference(img_a, img_b)
         diff = diff.convert('L')
-        # Hack: there is no threshold in PILL,
-        # so we add the difference with itself to do
-        # a poor man's thresholding of the mask:
-        # (the values for equal pixels-  0 - don't add up)
-        thresholded_diff = diff
-        for repeat in range(3):
-            thresholded_diff = ImageChops.add(thresholded_diff, thresholded_diff)
+        thresholded_diff = ImageChops.add(diff, diff)
         size = diff.size
         mask = self.create_gray_image(size, int(255 * (opacity)))
         shade = self.create_gray_image(size, 0)
         new = img_a.copy()
         new.paste(shade, mask=mask)
+        # To show the original image in the result, use mask=diff instead
         new.paste(img_b, mask=thresholded_diff)
-        # Show the original image in the result, use mask=diff
-        # new.paste(img_b, mask=diff)
         new.save('diff.png')
