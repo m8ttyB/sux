@@ -3,6 +3,7 @@
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 import time
 from PIL import Image, ImageChops, ImageDraw
+import pytest_inomaly
 
 import pytest
 
