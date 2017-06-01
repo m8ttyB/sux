@@ -4,5 +4,6 @@ __pycache__
 .DS_Store
 .tox
 *.pyc
+.venv/
 screenshot.png
 geckodriver.log
