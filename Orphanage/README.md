@@ -2,11 +2,11 @@
 DOM Element highlighter tool, updates role attributes of document elements.
 This project is an experiment that looks to improve site accessibility for screen reader users. Through the span of this project I've read through W3C documentation (not all of it!), blog posts, courses, etc. all discussing the importance of role attributes in the navigation of sites for people with disabilities.
 
-According to the [National Federation of The Blind] (https://nfb.org/blindness-statistics) based on information collected from various government agencies, the number of non-instutionalized Americans with some form of visual disability is around 7.3 million people or about 2.3% of the population in 2015, not an insignificant number. This figure accounts *only* for males and females 16 through 75+ of all races, ethnicities and education levels. Additionally, [Web Accessibility in Mind] (https://webaim.org/projects/screenreadersurvey6/) conducts a small annual survey (2015 latest available) with several interesting and telling statistics with screen readers and users with disabilities at it's core. 
+According to the [National Federation of The Blind](https://nfb.org/blindness-statistics) based on information collected from various government agencies, the number of non-instutionalized Americans with some form of visual disability is around 7.3 million people or about 2.3% of the population in 2015, not an insignificant number. This figure accounts *only* for males and females 16 through 75+ of all races, ethnicities and education levels. Additionally, [Web Accessibility in Mind](https://webaim.org/projects/screenreadersurvey6/) conducts a small annual survey (2015 latest available) with several interesting and telling statistics with screen readers and users with disabilities at it's core. 
 
 Despite all the available documentation that speaks to the importance of web accessibility and the role attribute/value, many, a great deal of websites actually, either don't use role attributes at all or are only used sparingly throughout. These elements and in cases entire sites left without roles are abandoned to a sort of orphanage for role-less and as a result sometimes impossible to use sites. This project aims to help in those situations.
 
-##Project Scope: 
+## Project Scope: 
 
 Purpose of role attribute: identifies exact function of an element and its children, allows for accessibility of screen reader users, also useful for screen scrapers. Native semantic element; assigns purpose to element it is within. Browsers will apply first recognized role in list. Custom roles can be used as long as they don't conflict with any defined ARIA roles but will not be functional.
 
@@ -25,13 +25,13 @@ Main function (IIFE) of script:
 6. remove highlighting from element once role attr injected.
 
 
-##Running Script in Developer Console:
+## Running Script in Developer Console:
 Simply copy all code and paste into dev console and hit enter.
 Page elements will be highlighted and role added 3 seconds after. 
 Orphange code in effect until page is refreshed or url changes.
 
 
-##Linking Script to HTML Document:
+## Linking Script to HTML Document:
 Script does not need libraries to run.
 Script needs to be wrapped in function like below in order to link to HTML file or run inline.
 
