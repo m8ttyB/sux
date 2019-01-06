@@ -1,4 +1,4 @@
-pytest==3.5.1
+pytest==4.1.0
 pytest-selenium==1.11.1
 Pillow==4.2.1
 git+https://github.com/olymk2/pytest-inomaly.git
